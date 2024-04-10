@@ -6,16 +6,16 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './src/js/index.js', // Incorrect file paths --------------------
-    install: './src/js/install.js' // Incorrect file paths --------------------
-   },
+    main: './src/js/index.js',
+    install: './src/js/install.js'
+  },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html', // Adjusted file path
+      template: './index.html',
       filename: 'index.html',
     }),
     new WebpackPwaManifest({
@@ -25,7 +25,7 @@ module.exports = {
       background_color: '#ffffff',
       crossorigin: 'use-credentials',
       icons: [{
-        src: path.resolve(__dirname, './src/images/logo.png'), // Adjusted file path
+        src: path.resolve(__dirname, './src/images/logo.png'), 
         sizes: [96, 128, 192, 256, 384, 512]
       }]
     }),
