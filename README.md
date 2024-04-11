@@ -15,6 +15,8 @@ This app allows you to create notes or code snippets with or without an internet
 
 ## Screenshots
 ![image](https://github.com/Sulxy/Joshs-PWA-Text-Editor/assets/149080702/2d2fccef-15ac-477a-85a3-076558cbcb4d)
+![image](https://github.com/Sulxy/Joshs-PWA-Text-Editor/assets/149080702/7081f0a7-6c3e-44ae-945a-bf421222d741)
+![image](https://github.com/Sulxy/Joshs-PWA-Text-Editor/assets/149080702/b25254c5-6eba-4b7d-8c72-0f31e51092b3)
 
 ## Deployed Link
 [Joshs-PWA-Text-Editor](https://joshs-pwa-text-editor.onrender.com/)
