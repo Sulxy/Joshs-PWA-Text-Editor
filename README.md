@@ -14,8 +14,10 @@ This app allows you to create notes or code snippets with or without an internet
 - [Questions](#questions)
 
 ## Screenshots
+![image](https://github.com/Sulxy/Joshs-PWA-Text-Editor/assets/149080702/2d2fccef-15ac-477a-85a3-076558cbcb4d)
 
 ## Deployed Link
+[Joshs-PWA-Text-Editor](https://joshs-pwa-text-editor.onrender.com/)
 
 ## Installation
 Clone the repository to your machine. Open it with your code editor, and navigate to the root directory with the client and server folders within it, and type in "npm install". Once all of the dependencies are installed, type in "npm run start:dev". 
@@ -31,7 +33,7 @@ This project is licensed under the MIT license.
 For more information about the license, click [here](https://opensource.org/licenses/MIT).
 
 ## Contributing
-Please see Githubs documents regarding this topic. 
+Please see the [Github Documents](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project) regarding this topic. 
 
 ## Tests
 No tests were written for this application. 
