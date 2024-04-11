@@ -16,7 +16,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
-      filename: 'index.html',
+      title: 'J.A.T.E',
+    }),
+    new InjectManifest({
+      swSrc: './src-sw.js',
+      swDest: 'service-worker.js',
     }),
     new WebpackPwaManifest({
       name: 'J.A.T.E',
@@ -24,15 +28,15 @@ module.exports = {
       description: 'Just Another Text Editor',
       background_color: '#ffffff',
       crossorigin: 'use-credentials',
+      inject: true,
+      start_url: '/',
+      publicPath: '/',
       icons: [{
-        src: path.resolve(__dirname, './src/images/logo.png'), 
-        sizes: [96, 128, 192, 256, 384, 512]
+        src: path.resolve(__dirname, 'src/images/logo.png'), 
+        sizes: [96, 128, 192, 256, 384, 512],
+        destination: path.join('assets', 'icons'),
       }]
     }),
-    new InjectManifest({
-      swSrc: './src-sw.js',
-      swDest: 'service-worker.js',
-    })
   ],
   module: {
     rules: [

@@ -1,15 +1,15 @@
 {
-  "name": "jate",
+  "name": "JATE",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start": "node server/server.js",
-    "server": "nodemon server/server.js",
-    "build": "webpack",
-    "install": "",
-    "client": "webpack --config client/webpack.config.js"
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
@@ -17,20 +17,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "webpack-pwa-manifest": "^4.3.0"
+    "serve": "^13.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.8",
-    "babel-loader": "^8.2.3",
     "concurrently": "^5.2.0",
-    "html-webpack-plugin": "^5.5.0",
-    "idb": "^6.1.2",
-    "nodemon": "^2.0.4",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^4.8.0",
-    "webpack-pwa-manifest": "^4.3.0",
-    "workbox-webpack-plugin": "^6.2.4"
+    "nodemon": "^2.0.4"
   }
 }
