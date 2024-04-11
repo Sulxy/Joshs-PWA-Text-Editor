@@ -28,7 +28,9 @@ export const getDb = async () => {
   const store = tx.objectStore('jate');
   const request = store.get(1);
   const result = await request;
-  result ? console.log('Content retrieved from database', result) : console.log('No content found in database');
+  result 
+    ? console.log('Content retrieved from database', result) 
+    : console.log('No content found in database');
 };
 
 initdb();
